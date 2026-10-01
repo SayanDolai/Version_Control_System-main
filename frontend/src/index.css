@@ -840,3 +840,1983 @@ body.dark-mode .line-number {
 body.dark-mode .empty-viewer p {
   color: #6b7280;
 }
+
+/* =========================
+   COMMIT HISTORY
+========================= */
+
+.page-breadcrumb {
+  color: #6b7280;
+
+  font-size: 13px;
+
+  margin-bottom: 24px;
+}
+
+.commit-history {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.commit-history-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 24px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.commit-history-header h2 {
+  font-size: 20px;
+
+  margin-bottom: 5px;
+}
+
+.commit-history-header p {
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+.branch-filter {
+  padding: 9px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  background: white;
+
+  color: #374151;
+
+  font-size: 13px;
+}
+
+.commit-history-list {
+  padding: 10px 24px;
+}
+
+.commit-history-item {
+  display: flex;
+
+  min-height: 85px;
+
+  cursor: pointer;
+}
+
+.commit-history-item:hover
+.commit-history-content {
+  background: #f8fafc;
+}
+
+.commit-timeline {
+  width: 32px;
+
+  position: relative;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+.commit-dot {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 21px;
+
+  font-size: 15px;
+
+  color: #4f46e5;
+}
+
+.commit-line {
+  position: absolute;
+
+  top: 36px;
+
+  bottom: -10px;
+
+  width: 2px;
+
+  background: #e5e7eb;
+}
+
+.commit-history-content {
+  flex: 1;
+
+  padding: 17px 16px;
+
+  border-radius: 7px;
+
+  transition: background 0.15s ease;
+}
+
+.commit-title {
+  font-size: 14px;
+
+  font-weight: 600;
+
+  margin-bottom: 7px;
+}
+
+.commit-information {
+  display: flex;
+
+  gap: 12px;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+.commit-information .commit-hash {
+  font-family: monospace;
+
+  color: #4f46e5;
+}
+
+
+/* =========================
+   COMMIT DETAILS
+========================= */
+
+.back-button {
+  border: none;
+
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 13px;
+
+  padding: 0;
+
+  margin-bottom: 24px;
+}
+
+.commit-details {
+  background: white;
+
+  border: 1px solid #e5e7eb;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.commit-details-header {
+  padding: 32px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.commit-details-header h1 {
+  font-size: 24px;
+
+  margin-bottom: 12px;
+}
+
+.commit-full-hash {
+  font-family: monospace;
+
+  color: #4f46e5;
+
+  font-size: 13px;
+}
+
+.commit-author {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 24px 32px 10px;
+}
+
+.commit-avatar {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #172033;
+
+  color: white;
+
+  font-weight: 600;
+}
+
+.commit-author p {
+  color: #9ca3af;
+
+  font-size: 12px;
+
+  margin-top: 3px;
+}
+
+.commit-date {
+  padding: 0 32px 24px;
+
+  color: #9ca3af;
+
+  font-size: 13px;
+}
+
+.commit-parent {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 32px;
+
+  border-top: 1px solid #e5e7eb;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  font-size: 13px;
+}
+
+.commit-parent > span:first-child {
+  color: #6b7280;
+
+  font-weight: 600;
+}
+
+.commit-parent button {
+  border: none;
+
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-family: monospace;
+
+  cursor: pointer;
+}
+
+.root-commit {
+  color: #9ca3af;
+}
+
+.changes-section {
+  padding: 24px 32px;
+}
+
+.changes-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 14px;
+}
+
+.changes-header h2 {
+  font-size: 17px;
+}
+
+.changes-header span {
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+.changes-list {
+  border: 1px solid #e5e7eb;
+
+  border-radius: 7px;
+
+  overflow: hidden;
+}
+
+.change-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 12px 14px;
+
+  border-bottom: 1px solid #f1f5f9;
+
+  font-family: monospace;
+
+  font-size: 13px;
+}
+
+.change-item:last-child {
+  border-bottom: none;
+}
+
+.change-status {
+  width: 20px;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.change-status.added {
+  color: #16a34a;
+}
+
+.change-status.modified {
+  color: #d97706;
+}
+
+.change-status.deleted {
+  color: #dc2626;
+}
+
+
+/* =========================
+   DARK MODE - COMMITS
+========================= */
+
+body.dark-mode .page-breadcrumb {
+  color: #6b7280;
+}
+
+body.dark-mode .commit-history {
+  background: #161a22;
+
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .commit-history-header {
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .branch-filter {
+  background: #1c212b;
+
+  border-color: #343a46;
+
+  color: #e5e7eb;
+}
+
+body.dark-mode .commit-history-item:hover
+.commit-history-content {
+  background: #1f2430;
+}
+
+body.dark-mode .commit-line {
+  background: #343a46;
+}
+
+body.dark-mode .commit-information {
+  color: #6b7280;
+}
+
+body.dark-mode .commit-information .commit-hash {
+  color: #a5b4fc;
+}
+
+
+/* Commit details */
+
+body.dark-mode .commit-details {
+  background: #161a22;
+
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .commit-details-header {
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .commit-full-hash {
+  color: #a5b4fc;
+}
+
+body.dark-mode .commit-author p {
+  color: #6b7280;
+}
+
+body.dark-mode .commit-date {
+  color: #6b7280;
+}
+
+body.dark-mode .commit-parent {
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .commit-parent button {
+  color: #a5b4fc;
+}
+
+body.dark-mode .changes-list {
+  border-color: #2a2f3a;
+}
+
+body.dark-mode .change-item {
+  border-color: #242934;
+}
+
+
+/* =========================
+   BRANCHES
+========================= */
+
+.branch-page {
+  padding: 32px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.branch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.branch-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.branch-header p {
+  margin-top: 6px;
+  color: #777;
+}
+
+.create-branch-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #24292f;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.create-branch-button:hover {
+  opacity: 0.9;
+}
+
+.branch-count {
+  margin-bottom: 12px;
+  color: #666;
+  font-size: 14px;
+}
+
+.branch-list {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.branch-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.branch-item:last-child {
+  border-bottom: none;
+}
+
+.branch-name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.branch-icon {
+  font-size: 18px;
+}
+
+.current-badge,
+.protected-badge {
+  padding: 3px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.current-badge {
+  background: #e6f4ea;
+  color: #188038;
+}
+
+.protected-badge {
+  background: #eee;
+  color: #555;
+}
+
+.branch-commit {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  color: #444;
+}
+
+.commit-hash {
+  font-family: monospace;
+  color: #6f42c1;
+}
+
+.branch-meta {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+}
+
+.branch-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.branch-switch,
+.branch-delete {
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+}
+
+.branch-switch {
+  border: 1px solid #ccc;
+}
+
+.branch-delete {
+  border: 1px solid #dc3545;
+  color: #dc3545;
+}
+
+.branch-switch:hover {
+  background: #f5f5f5;
+}
+
+.branch-delete:hover {
+  background: #fff5f5;
+}
+
+.create-branch-form {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.create-branch-form input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-branch-form button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 5px;
+  background: #24292f;
+  color: white;
+  cursor: pointer;
+}
+
+.create-branch-form .cancel-button {
+  background: #eee;
+  color: #333;
+}
+
+body.dark-mode .branch-list {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+body.dark-mode .branch-item {
+  border-color: #30363d;
+}
+
+body.dark-mode .branch-header p,
+body.dark-mode .branch-count {
+  color: #8b949e;
+}
+
+body.dark-mode .branch-commit {
+  color: #c9d1d9;
+}
+
+body.dark-mode .branch-meta {
+  color: #8b949e;
+}
+
+body.dark-mode .create-branch-form {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+body.dark-mode .create-branch-form input {
+  background: #0d1117;
+  color: white;
+  border-color: #30363d;
+}
+
+body.dark-mode .branch-switch {
+  background: #21262d;
+  color: white;
+  border-color: #30363d;
+}
+
+/* =========================
+   STATUS PAGE
+========================= */
+
+.status-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.status-header {
+  margin-bottom: 25px;
+}
+
+.status-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.status-header p {
+  margin-top: 7px;
+  color: #777;
+}
+
+.changes-section {
+  margin-bottom: 24px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background: white;
+}
+
+.changes-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.changes-section-header h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.changes-section-header span {
+  margin-left: 8px;
+  font-size: 13px;
+  color: #777;
+}
+
+.status-file {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.status-file:last-child {
+  border-bottom: none;
+}
+
+.status-file-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 5px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-icon.modified {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-icon.added {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-icon.deleted {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status-file-path {
+  font-family: monospace;
+  font-size: 14px;
+}
+
+.stage-button,
+.unstage-button,
+.stage-all-button {
+  padding: 7px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background: white;
+}
+
+.stage-button:hover,
+.unstage-button:hover,
+.stage-all-button:hover {
+  background: #f5f5f5;
+}
+
+.empty-changes {
+  padding: 35px;
+  text-align: center;
+  color: #888;
+}
+
+.commit-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+}
+
+.commit-box h3 {
+  margin-top: 0;
+}
+
+.commit-box textarea {
+  width: 100%;
+  min-height: 100px;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  resize: vertical;
+
+  border: 1px solid #ccc;
+  border-radius: 6px;
+
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.commit-box-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 12px;
+
+  color: #777;
+  font-size: 13px;
+}
+
+.commit-button {
+  padding: 9px 16px;
+
+  border: none;
+  border-radius: 6px;
+
+  background: #24292f;
+  color: white;
+
+  cursor: pointer;
+}
+
+.commit-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+body.dark-mode .changes-section {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+body.dark-mode .changes-section-header {
+  border-color: #30363d;
+}
+
+body.dark-mode .status-file {
+  border-color: #30363d;
+}
+
+body.dark-mode .status-file-path {
+  color: #c9d1d9;
+}
+
+body.dark-mode .status-header p,
+body.dark-mode .changes-section-header span,
+body.dark-mode .commit-box-footer {
+  color: #8b949e;
+}
+
+body.dark-mode .stage-button,
+body.dark-mode .unstage-button,
+body.dark-mode .stage-all-button {
+  background: #21262d;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+body.dark-mode .commit-box {
+  background: #161b22;
+  border-color: #30363d;
+}
+
+body.dark-mode .commit-box textarea {
+  background: #0d1117;
+  color: #c9d1d9;
+  border-color: #30363d;
+}
+
+/* =========================================
+   STAGE 5 — DIFF VIEWER
+========================================= */
+
+.diff-page {
+  width: 100%;
+
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding:
+    35px 40px 60px;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.diff-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.diff-title-row {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.diff-title-row h2 {
+  margin: 0;
+
+  color: #1f2328;
+
+  font-size: 28px;
+
+  font-weight: 650;
+}
+
+.diff-hash {
+  padding:
+    4px 8px;
+
+  border-radius: 5px;
+
+  background: #eaeef2;
+
+  color: #57606a;
+
+  font-family: monospace;
+
+  font-size: 12px;
+}
+
+.diff-message {
+  margin:
+    7px 0 0;
+
+  color: #24292f;
+
+  font-size: 15px;
+
+  font-weight: 500;
+}
+
+.diff-meta {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 7px;
+
+  color: #656d76;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   SUMMARY
+========================================= */
+
+.diff-summary {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.files-changed {
+  padding:
+    6px 10px;
+
+  border:
+    1px solid #d0d7de;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #57606a;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.additions,
+.deletions {
+  font-family: monospace;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+.additions {
+  color: #1a7f37;
+}
+
+.deletions {
+  color: #cf222e;
+}
+
+
+/* =========================================
+   DIFF LAYOUT
+========================================= */
+
+.diff-layout {
+  display: flex;
+
+  overflow: hidden;
+
+  min-height: 500px;
+
+  background: #ffffff;
+
+  border:
+    1px solid #d8dee4;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 1px 2px
+    rgba(0, 0, 0, 0.04);
+}
+
+
+/* =========================================
+   FILE LIST
+========================================= */
+
+.diff-file-list {
+  width: 280px;
+
+  min-width: 280px;
+
+  background: #f6f8fa;
+
+  border-right:
+    1px solid #d8dee4;
+}
+
+.diff-file-list-header {
+  padding:
+    15px 16px;
+
+  border-bottom:
+    1px solid #d8dee4;
+
+  color: #57606a;
+
+  font-size: 12px;
+
+  font-weight: 650;
+
+  text-transform: uppercase;
+}
+
+.diff-file-item {
+  padding:
+    12px 14px;
+
+  border-bottom:
+    1px solid #eaeef2;
+
+  cursor: pointer;
+
+  transition:
+    background 0.12s ease;
+}
+
+.diff-file-item:hover {
+  background: #eaeef2;
+}
+
+.diff-file-item.selected {
+  background: #dbe7ff;
+
+  border-left:
+    3px solid #0969da;
+
+  padding-left: 11px;
+}
+
+.diff-file-name {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 9px;
+
+  color: #24292f;
+
+  font-family: monospace;
+
+  font-size: 12px;
+
+  line-height: 18px;
+
+  word-break: break-word;
+}
+
+.diff-status-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 20px;
+
+  height: 20px;
+
+  flex-shrink: 0;
+
+  border-radius: 4px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+}
+
+.diff-status-icon.added {
+  background: #dafbe1;
+
+  color: #1a7f37;
+}
+
+.diff-status-icon.modified {
+  background: #fff8c5;
+
+  color: #9a6700;
+}
+
+.diff-status-icon.deleted {
+  background: #ffebe9;
+
+  color: #cf222e;
+}
+
+.diff-file-stats {
+  display: flex;
+
+  gap: 8px;
+
+  margin-top: 7px;
+
+  margin-left: 29px;
+}
+
+
+/* =========================================
+   DIFF CONTENT
+========================================= */
+
+.diff-content {
+  flex: 1;
+
+  min-width: 0;
+
+  overflow-x: auto;
+}
+
+.diff-content-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 50px;
+
+  padding:
+    12px 18px;
+
+  background: #f6f8fa;
+
+  border-bottom:
+    1px solid #d8dee4;
+}
+
+.diff-path {
+  color: #24292f;
+
+  font-family: monospace;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   CODE DIFF
+========================================= */
+
+.code-diff {
+  width: max-content;
+
+  min-width: 100%;
+}
+
+.diff-line {
+  display: flex;
+
+  min-height: 24px;
+
+  line-height: 24px;
+
+  font-family:
+    "SFMono-Regular",
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+  font-size: 12px;
+}
+
+.diff-line.added {
+  background: #dafbe1;
+}
+
+.diff-line.removed {
+  background: #ffebe9;
+}
+
+.diff-line.context {
+  background: #ffffff;
+}
+
+.line-number {
+  width: 52px;
+
+  flex-shrink: 0;
+
+  padding-right: 10px;
+
+  text-align: right;
+
+  user-select: none;
+
+  color: #8c959f;
+
+  background: #f6f8fa;
+
+  border-right:
+    1px solid #eaeef2;
+}
+
+.diff-line.added .line-number,
+.diff-line.removed .line-number {
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.line-marker {
+  width: 25px;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+  font-weight: 700;
+}
+
+.diff-line.added .line-marker {
+  color: #1a7f37;
+}
+
+.diff-line.removed .line-marker {
+  color: #cf222e;
+}
+
+.line-content {
+  margin: 0;
+
+  padding:
+    0 16px;
+
+  white-space: pre;
+
+  color: #24292f;
+}
+
+/* =========================================
+   DIFF DARK MODE
+========================================= */
+
+body.dark-mode .diff-title-row h2 {
+  color: #e6edf3;
+}
+
+body.dark-mode .diff-hash {
+  background: #30363d;
+
+  color: #8b949e;
+}
+
+body.dark-mode .diff-message {
+  color: #e6edf3;
+}
+
+body.dark-mode .diff-meta {
+  color: #8b949e;
+}
+
+body.dark-mode .files-changed {
+  background: #161b22;
+
+  border-color: #30363d;
+
+  color: #8b949e;
+}
+
+
+/* Diff container */
+
+body.dark-mode .diff-layout {
+  background: #161b22;
+
+  border-color: #30363d;
+}
+
+
+/* File list */
+
+body.dark-mode .diff-file-list {
+  background: #161b22;
+
+  border-color: #30363d;
+}
+
+body.dark-mode .diff-file-list-header {
+  background: #21262d;
+
+  border-color: #30363d;
+
+  color: #8b949e;
+}
+
+body.dark-mode .diff-file-item {
+  border-color: #30363d;
+}
+
+body.dark-mode .diff-file-item:hover {
+  background: #21262d;
+}
+
+body.dark-mode .diff-file-item.selected {
+  background: #1f3155;
+
+  border-left-color: #58a6ff;
+}
+
+body.dark-mode .diff-file-name {
+  color: #e6edf3;
+}
+
+
+/* Diff content */
+
+body.dark-mode .diff-content-header {
+  background: #21262d;
+
+  border-color: #30363d;
+}
+
+body.dark-mode .diff-path {
+  color: #e6edf3;
+}
+
+
+/* Code */
+
+body.dark-mode .diff-line.context {
+  background: #0d1117;
+}
+
+body.dark-mode .diff-line.added {
+  background: #122b1c;
+}
+
+body.dark-mode .diff-line.removed {
+  background: #32181a;
+}
+
+body.dark-mode .line-number {
+  background: #161b22;
+
+  border-color: #30363d;
+
+  color: #6e7681;
+}
+
+body.dark-mode .diff-line.added .line-number {
+  background: #193322;
+}
+
+body.dark-mode .diff-line.removed .line-number {
+  background: #3a1c1f;
+}
+
+body.dark-mode .line-content {
+  color: #e6edf3;
+}
+
+body.dark-mode .diff-line.added .line-marker {
+  color: #3fb950;
+}
+
+body.dark-mode .diff-line.removed .line-marker {
+  color: #f85149;
+}
+
+
+/* =========================================
+   DIFF RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .diff-page {
+    padding:
+      25px 20px 40px;
+  }
+
+  .diff-header {
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .diff-file-list {
+    width: 220px;
+
+    min-width: 220px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .diff-page {
+    padding:
+      20px 12px 30px;
+  }
+
+  .diff-layout {
+    display: block;
+  }
+
+  .diff-file-list {
+    width: 100%;
+
+    min-width: 100%;
+
+    max-height: 220px;
+
+    overflow-y: auto;
+
+    border-right: none;
+
+    border-bottom:
+      1px solid #d8dee4;
+  }
+
+  .diff-summary {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/* =========================================
+   STAGE 6 — COMMIT GRAPH
+========================================= */
+
+.graph-page {
+  width: 100%;
+
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  padding:
+    35px 40px 60px;
+}
+
+
+/* =========================================
+   PAGE HEADER
+========================================= */
+
+.graph-page-header {
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  margin-bottom: 25px;
+}
+
+.graph-page-header h2 {
+  margin: 0;
+
+  color: #1f2328;
+
+  font-size: 28px;
+
+  font-weight: 650;
+}
+
+.graph-page-header p {
+  margin:
+    6px 0 0;
+
+  color: #656d76;
+
+  font-size: 14px;
+}
+
+.graph-stats {
+  display: flex;
+
+  gap: 8px;
+}
+
+.graph-stats span {
+  padding:
+    6px 11px;
+
+  border:
+    1px solid #d0d7de;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  color: #57606a;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================
+   GRAPH CARD
+========================================= */
+
+.graph-card {
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border:
+    1px solid #d8dee4;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 1px 2px
+    rgba(0, 0, 0, 0.04);
+}
+
+.graph-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  min-height: 58px;
+
+  padding:
+    0 20px;
+
+  background: #f6f8fa;
+
+  border-bottom:
+    1px solid #d8dee4;
+
+  color: #24292f;
+
+  font-size: 14px;
+
+  font-weight: 650;
+}
+
+.graph-current-branch {
+  padding:
+    5px 10px;
+
+  border-radius: 20px;
+
+  background: #dafbe1;
+
+  color: #1a7f37;
+
+  font-size: 12px;
+}
+
+
+/* =========================================
+   GRAPH CONTAINER
+========================================= */
+
+.commit-graph-container {
+  padding:
+    10px 0 20px;
+}
+
+
+/* =========================================
+   GRAPH ROW
+========================================= */
+
+.graph-row {
+  display: grid;
+
+  grid-template-columns:
+    70px
+    minmax(300px, 1fr)
+    220px;
+
+  min-height: 78px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   GRAPH COLUMN
+========================================= */
+
+.graph-column {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+
+/* =========================================
+   VERTICAL LINE
+========================================= */
+
+.graph-line {
+  position: absolute;
+
+  top: 50%;
+
+  bottom: -50%;
+
+  left: 50%;
+
+  width: 2px;
+
+  transform:
+    translateX(-50%);
+
+  background: #8c959f;
+}
+
+
+/* =========================================
+   COMMIT NODE
+========================================= */
+
+.commit-node {
+  position: relative;
+
+  z-index: 2;
+
+  width: 17px;
+
+  height: 17px;
+
+  padding: 0;
+
+  border:
+    3px solid #ffffff;
+
+  border-radius: 50%;
+
+  background: #0969da;
+
+  box-shadow:
+    0 0 0 2px #0969da;
+
+  cursor: pointer;
+}
+
+.commit-node:hover {
+  transform: scale(1.15);
+}
+
+
+/* =========================================
+   COMMIT INFORMATION
+========================================= */
+
+.graph-commit {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding:
+    10px 15px;
+
+  border-bottom:
+    1px solid #eaeef2;
+}
+
+.graph-row:hover .graph-commit {
+  background: #f6f8fa;
+}
+
+.graph-commit-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 15px;
+}
+
+.graph-message {
+  overflow: hidden;
+
+  color: #24292f;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.graph-hash {
+  flex-shrink: 0;
+
+  color: #6e7781;
+
+  font-family: monospace;
+
+  font-size: 12px;
+}
+
+.graph-commit-bottom {
+  display: flex;
+
+  gap: 7px;
+
+  margin-top: 6px;
+
+  color: #8c959f;
+
+  font-size: 11px;
+}
+
+
+/* =========================================
+   BRANCH LABEL
+========================================= */
+
+.graph-branch {
+  display: flex;
+
+  align-items: center;
+
+  padding:
+    10px 15px;
+
+  border-bottom:
+    1px solid #eaeef2;
+}
+
+.branch-label {
+  padding:
+    5px 9px;
+
+  border-radius: 5px;
+
+  font-family: monospace;
+
+  font-size: 11px;
+
+  font-weight: 600;
+}
+
+.branch-label.main {
+  background: #ddf4ff;
+
+  color: #0969da;
+}
+
+.branch-label.feature {
+  background: #fbefff;
+
+  color: #8250df;
+}
+
+/* =========================================
+   COMMIT GRAPH DARK MODE
+========================================= */
+
+body.dark-mode .graph-page-header h2 {
+  color: #e6edf3;
+}
+
+body.dark-mode .graph-page-header p {
+  color: #8b949e;
+}
+
+body.dark-mode .graph-stats span {
+  background: #161b22;
+
+  border-color: #30363d;
+
+  color: #8b949e;
+}
+
+
+/* Graph card */
+
+body.dark-mode .graph-card {
+  background: #161b22;
+
+  border-color: #30363d;
+}
+
+
+/* Graph header */
+
+body.dark-mode .graph-card-header {
+  background: #21262d;
+
+  border-color: #30363d;
+
+  color: #e6edf3;
+}
+
+body.dark-mode .graph-current-branch {
+  background: #193322;
+
+  color: #3fb950;
+}
+
+
+/* Graph */
+
+body.dark-mode .graph-line {
+  background: #6e7681;
+}
+
+body.dark-mode .commit-node {
+  border-color: #161b22;
+
+  background: #58a6ff;
+
+  box-shadow:
+    0 0 0 2px #58a6ff;
+}
+
+
+/* Commit */
+
+body.dark-mode .graph-commit {
+  border-color: #30363d;
+}
+
+body.dark-mode .graph-row:hover .graph-commit {
+  background: #21262d;
+}
+
+body.dark-mode .graph-message {
+  color: #e6edf3;
+}
+
+body.dark-mode .graph-hash {
+  color: #8b949e;
+}
+
+body.dark-mode .graph-commit-bottom {
+  color: #6e7681;
+}
+
+
+/* Branch */
+
+body.dark-mode .graph-branch {
+  border-color: #30363d;
+}
+
+body.dark-mode .branch-label.main {
+  background: #1f3155;
+
+  color: #58a6ff;
+}
+
+body.dark-mode .branch-label.feature {
+  background: #2d2140;
+
+  color: #d2a8ff;
+}
+
+
+
+/* =========================================
+   GRAPH RESPONSIVE
+========================================= */
+
+@media (max-width: 850px) {
+
+  .graph-page {
+    padding:
+      25px 20px 40px;
+  }
+
+  .graph-row {
+    grid-template-columns:
+      55px
+      minmax(250px, 1fr)
+      160px;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .graph-page {
+    padding:
+      20px 12px 30px;
+  }
+
+  .graph-page-header {
+    flex-direction: column;
+
+    gap: 12px;
+  }
+
+  .graph-row {
+    grid-template-columns:
+      50px
+      1fr;
+  }
+
+  .graph-branch {
+    display: none;
+  }
+
+  .graph-commit-top {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 4px;
+  }
+
+}
+
+
+
+
+
